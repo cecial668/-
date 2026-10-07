@@ -1,0 +1,5 @@
+开发环境: Idea Ultimate2024
+Maven版本:3.9.9
+JavaFX版本:17.0.6
+jdk版本:17
+云数据库版本:MySQL 8.0.19

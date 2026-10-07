@@ -1,0 +1,25 @@
+# 构建输出
+target/
+build/
+out/
+*.class
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# Office 临时文件
+~$*
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# Maven Wrapper 需要保留
+!.mvn/wrapper/maven-wrapper.jar

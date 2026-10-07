@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ChoiceHeroController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1300.0">
+         <image>
+            <Image url="@../../../Images/GameStartResources/background3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="400.0" layoutY="80.0">
+         <image>
+            <Image url="@../../../Images/GameStartResources/APEX1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="800.0" layoutY="80.0">
+         <image>
+            <Image url="@../../../Images/GameStartResources/APEX2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="choice1" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#mouseClickedSelectHero" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="400.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/ChoiceHero1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="choice2" layoutX="900.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#mouseClickedSelectHero" opacity="0.1" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="400.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/ChoiceHero2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hero1" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHero1ButtonAction" onMouseClicked="#mouseClickedSelectHero" onMouseEntered="#mouseEnteredSelectHero" onMouseExited="#mouseExitedSelectHero" opacity="0.7" prefHeight="500.0" prefWidth="325.0">
+         <graphic>
+            <ImageView fitHeight="500.0" fitWidth="325.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/Archer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hero2" layoutX="325.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHero2ButtonAction" onMouseClicked="#mouseClickedSelectHero" onMouseEntered="#mouseEnteredSelectHero" onMouseExited="#mouseExitedSelectHero" opacity="0.7" prefHeight="500.0" prefWidth="325.0">
+         <graphic>
+            <ImageView fitHeight="500.0" fitWidth="325.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/Mage.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hero3" layoutX="650.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHero3ButtonAction" onMouseClicked="#mouseClickedSelectHero" onMouseEntered="#mouseEnteredSelectHero" onMouseExited="#mouseExitedSelectHero" opacity="0.7" prefHeight="500.0" prefWidth="325.0">
+         <graphic>
+            <ImageView fitHeight="500.0" fitWidth="325.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/Vegeta.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hero4" layoutX="975.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHero4ButtonAction" onMouseClicked="#mouseClickedSelectHero" onMouseEntered="#mouseEnteredSelectHero" onMouseExited="#mouseExitedSelectHero" opacity="0.7" prefHeight="500.0" prefWidth="325.0">
+         <graphic>
+            <ImageView fitHeight="500.0" fitWidth="325.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/XingJianYa.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endY="500.0" layoutX="325.0" layoutY="300.0" strokeWidth="5.0" />
+      <Line endY="500.0" layoutX="650.0" layoutY="300.0" strokeWidth="5.0" />
+      <Line endY="500.0" layoutX="975.0" layoutY="300.0" strokeWidth="5.0" />
+      <Line endX="1300.0" layoutY="300.0" strokeWidth="10.0" />
+      <Button fx:id="start" layoutX="487.5" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onStartAction" onMouseClicked="#mouseClickedSelectHero" onMouseEntered="#mouseEnteredSelectHero" onMouseExited="#mouseExitedSelectHero" prefHeight="100.0" prefWidth="325.0">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="325.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/mapSelect.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

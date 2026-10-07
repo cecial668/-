@@ -1,0 +1,46 @@
+{
+  "waypoints": [
+    {"x": 220, "y": 560},
+    {"x": 530, "y": 560},
+    {"x": 1000, "y": 560},
+    {"x": 900, "y": 430},
+    {"x": 783, "y": 430},
+    {"x": 434, "y": 430},
+    {"x": 320, "y": 430},
+    {"x": 535, "y": 300},
+    {"x": 688, "y": 300},
+    {"x": 690, "y": 560},
+    {"x": 370, "y": 560},
+    {"x": 850, "y": 560},
+    {"x": 380, "y": 430},
+    {"x": 300, "y": 560},
+    {"x": 455, "y": 560},
+    {"x": 850, "y": 430},
+    {"x": 775, "y": 560},
+    {"x": 930, "y": 560}
+
+  ],
+  "edges": [
+    {"fromIndex": 0, "toIndex": 13},
+    {"fromIndex": 10, "toIndex": 13},
+    {"fromIndex": 1, "toIndex": 9},
+    {"fromIndex": 1, "toIndex": 5},
+    {"fromIndex": 5, "toIndex": 12},
+    {"fromIndex": 6, "toIndex": 12},
+    {"fromIndex": 0, "toIndex": 6},
+    {"fromIndex": 5, "toIndex": 7},
+    {"fromIndex": 7, "toIndex": 8},
+    {"fromIndex": 8, "toIndex": 4},
+    {"fromIndex": 4, "toIndex": 15},
+    {"fromIndex": 3, "toIndex": 15},
+    {"fromIndex": 4, "toIndex": 9},
+    {"fromIndex": 2, "toIndex": 3},
+    {"fromIndex": 2, "toIndex": 17},
+    {"fromIndex": 11, "toIndex": 17},
+    {"fromIndex": 11, "toIndex": 16},
+    {"fromIndex": 9, "toIndex": 16},
+    {"fromIndex": 10, "toIndex": 14},
+    {"fromIndex": 1, "toIndex": 14}
+
+  ]
+}

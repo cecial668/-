@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.GameSelectController">
+    <children>
+        <ImageView fitHeight="800.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/GameStartResources/background2.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="pvpButton" layoutX="540.0" layoutY="265.0" mnemonicParsing="false" onAction="#onPVPButtonAction" onMouseClicked="#mouseClickedSelectGame" onMouseEntered="#mouseEnteredSelectGame" onMouseExited="#mouseExitedSelectGame" opacity="0.7" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/GameStartResources/pvpLabel.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="pveButton" layoutX="540.0" layoutY="375.0" mnemonicParsing="false" onAction="#onPVEButtonAction" onMouseClicked="#mouseClickedSelectGame" onMouseEntered="#mouseEnteredSelectGame" onMouseExited="#mouseExitedSelectGame" opacity="0.7" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/GameStartResources/pveLabel.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="backButton" layoutX="580.0" layoutY="517.0" mnemonicParsing="false" onAction="#onBackButtonAction" onMouseClicked="#mouseClickedSelectGame" onMouseEntered="#mouseEnteredSelectGame" onMouseExited="#mouseExitedSelectGame" opacity="0.7" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="57.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/GameStartResources/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+      <Button fx:id="rankButton" layoutX="450.0" layoutY="603.0" mnemonicParsing="false" onAction="#turnToRank" onMouseClicked="#mouseClickedSelectGame" onMouseEntered="#mouseEnteredSelectGame" onMouseExited="#mouseExitedSelectGame" opacity="0.7" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="300.0">
+               <image>
+                  <Image url="@../../../Images/GameStartResources/turnToRank.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>
